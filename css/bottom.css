@@ -1,0 +1,136 @@
+/* footer */
+.service {
+    font-size: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.service_items {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 240px;
+    cursor: pointer;
+}
+.service_items:hover {
+    color: #f56500;
+}
+.service img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top:6px;
+}
+.link {
+    position: relative;
+}
+.link_left {
+    width: 960px;
+}
+.link_left_top {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+.link_left_bottom {
+    display: flex;
+    width: 960px;
+    justify-content: space-between;
+    color: #757575;
+    font-size: 12px;
+}
+.bottom_items div {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.bottom_items div:hover {
+    color: #f56500;
+}
+.link_right {
+    text-align: center;
+    display: inline-block;
+    width: 252px;
+    right: 0;
+    position: absolute;
+    top:0px;
+    border-left: 1.5px solid #e0e0e0;
+}
+.phone {
+    margin: 0 0 5px;
+    font-size: 22px;
+    color: #ff6700;
+}
+.time ,.phone_bill{
+    font-size: 12px;
+    color: #757575;
+}
+.online_service {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    color: #ff6700;
+    border: 1.5px solid #ff6700;
+    line-height: 30px;
+    position: relative;
+    top:5px;
+    left: 66px;
+    cursor: pointer;
+}
+.online_service:hover {
+    color: white;
+    background-color: #f56500;
+}
+/* information */
+.information {
+    padding:30px 0;
+    position: relative;
+    width:100%;
+    background-color: #fafafa;
+}
+.information_left {
+    display: inline-block;
+}
+.information .mi_logo {
+    width: 57px;
+    height: 57px;
+}
+.information_center {
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    left:60px;
+    top:30px;
+    width: 700px;
+}
+.information_center .p1 {
+    color: #757575;
+}
+.information_center .p2 {
+    color: #b0b0b0;
+}
+.information_right {
+    display: inline-block;
+    position:absolute;
+    right: 0;
+}
+.information_right img {
+    height: 28px;
+}
+.time {
+    margin: 0;
+}
+.phone_bill {
+    margin: 0;
+}
+.slogan {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/top.css" />
+    <link rel="stylesheet" type="text/css" href="css/bottom.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+</head>
+
+<body>
+    <div id="container">
+        <!-- top_bar -->
+        <div id="top_bar">
+            <ul id="top_bar_left">
+                <li class="item_left"><a href="#">小米商城</a></li>
+                <li class="item_left"><a href="#">MIUI</a></li>
+                <li class="item_left"><a href="#">米聊</a></li>
+                <li class="item_left"><a href="#">游戏</a></li>
+                <li class="item_left"><a href="#">多看阅读</a></li>
+                <li class="item_left"><a href="#">云服务</a></li>
+                <li class="item_left"><a href="#">金融</a></li>
+                <li class="item_left"><a href="#">小米网移动版</a></li>
+                <li class="item_left"><a href="#">问题反馈</a></li>
+                <li class="item_left"><a href="#">Select Region</a></li>
+            </ul>
+            <div id="top_bar_right">
+                <div id="top_bar_login" class="item_right">
+                    <a href="#" id="login">登录</a>
+                </div>
+                <div id="top_bar_registration" class="item_right">
+                    <a href="#" id="registration">注册</a>
+                </div>
+                <div id="top_bar_cart" class="item_right">
+                    <a href="#" id="myCart">购物车</a>
+                </div>
+            </div>
+            <div id="success_login">
+                <p id="user_name"></p>
+                <div id="cart">购物车</div>
+                <span id="exit">退出登录</span>
+            </div>
+        </div>
+        <!-- top_header -->
+        <div id="top_header">
+            <img src="image/mi_logo.png" id="logo" />
+            <img src="image/win.74c0d23.gif" id="win_game" />
+            <ul id="top_header_center">
+                <li class="top_header_item"><a href="#">小米手机</a></li>
+                <li class="top_header_item"><a href="#">红米</a></li>
+                <li class="top_header_item"><a href="#">平板 · 笔记本</a></li>
+                <li class="top_header_item"><a href="#">电视</a></li>
+                <li class="top_header_item"><a href="#">盒子 · 影音</a></li>
+                <li class="top_header_item"><a href="#">路由器</a></li>
+                <li class="top_header_item"><a href="#">智能硬件</a></li>
+                <li class="top_header_item"><a href="#">服务</a></li>
+                <li class="top_header_item"><a href="#">社区</a></li>
+            </ul>
+            <div id="search">
+                <input type="text" id="search_input" onmousemove="changeColorToGray()" onmouseout="backColor()"
+                    onclick="changeColorToOrange()" />
+                <img src="image/搜索.png" id="search_icon" />
+                <ul id="search_result">
+                    <li>
+                        <span class="li_name">小米手机5</span>
+                        <span class="li_count">约有11件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">空气净化器2</span>
+                        <span class="li_count">约有1件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">活塞耳机</span>
+                        <span class="li_count">约有4件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">小米路由器</span>
+                        <span class="li_count">约有8件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">移动电源</span>
+                        <span class="li_count">约有21件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">运动相机</span>
+                        <span class="li_count">约有3件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">小米摄像机</span>
+                        <span class="li_count">约有2件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">小米体重秤</span>
+                        <span class="li_count">约有1件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">小米插线板</span>
+                        <span class="li_count">约有13件</span>
+                    </li>
+                    <li>
+                        <span class="li_name">配件优惠套餐</span>
+                        <span class="li_count">约有32件</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- detail -->
+            <div id="detail_box">
+                <div id="detail">
+                    <!-- 小米手机 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xm6.png" /></div>
+                            <p class="product_name">小米6</p>
+                            <p class="least_price">2499元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/max2.png" /></div>
+                            <p class="product_name">小米Max2</p>
+                            <p class="least_price">1699元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">现货</div>
+                            <div><img src="image/xiaomiNOTE2.jpg" /></div>
+                            <p class="product_name">小米Note2</p>
+                            <p class="least_price">2799元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">现货</div>
+                            <div><img src="image/MIX.jpg" /></div>
+                            <p class="product_name">小米MIX</p>
+                            <p class="least_price">3499元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">现货</div>
+                            <div><img src="image/5splus.jpg" /></div>
+                            <p class="product_name">小米5s Plus</p>
+                            <p class="least_price">2299元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">现货</div>
+                            <div><img src="image/mi5c.png" /></div>
+                            <p class="product_name">小米手机5c</p>
+                            <p class="least_price">1499元起</p>
+                        </div>
+                    </div>
+                    <!-- 红米 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/hmn4x.jpg" /></div>
+                            <p class="product_name">红米Note4x</p>
+                            <p class="least_price">799元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/hm4x.jpg" /></div>
+                            <p class="product_name">红米4x</p>
+                            <p class="least_price">699元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/hm4a.png" /></div>
+                            <p class="product_name">红米4A</p>
+                            <p class="least_price">599元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/hm4.jpg" /></div>
+                            <p class="product_name">红米4</p>
+                            <p class="least_price">799元起</p>
+                        </div>
+                    </div>
+                    <!-- 笔记本 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/mipad3.png" /></div>
+                            <p class="product_name">小米平板3 64GB</p>
+                            <p class="least_price">1499元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/bijiben12.5.jpg" /></div>
+                            <p class="product_name">小米笔记本Air 12.5</p>
+                            <p class="least_price">3599元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/bijiben13.3.jpg" /></div>
+                            <p class="product_name">小米笔记本Air 12.5</p>
+                            <p class="least_price">4999元起</p>
+                        </div>
+                    </div>
+                    <!-- 电视 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmds_49.png" /></div>
+                            <p class="product_name">小米电视4 49英寸</p>
+                            <p class="least_price">3499元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmds_55.png" /></div>
+                            <p class="product_name">小米电视4 55英寸</p>
+                            <p class="least_price">3999元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmds_65.png" /></div>
+                            <p class="product_name">小米电视4 55英寸</p>
+                            <p class="least_price">9999元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmds4a_43.png" /></div>
+                            <p class="product_name">小米电视4A 43英寸</p>
+                            <p class="least_price">2099元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmds4a_49.png" /></div>
+                            <p class="product_name">小米电视4A 49英寸</p>
+                            <p class="least_price">2599元起</p>
+                        </div>
+                    </div>
+                    <!-- 盒子 影音 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/mihezi.png" /></div>
+                            <p class="product_name">小米盒子3s</p>
+                            <p class="least_price">299元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/mihezi3c.png" /></div>
+                            <p class="product_name">小米盒子3c</p>
+                            <p class="least_price">199元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/hezi3s.jpg" /></div>
+                            <p class="product_name">小米盒子3 增强版</p>
+                            <p class="least_price">399元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/jiatingyingyuan.png" /></div>
+                            <p class="product_name">小米家庭影院</p>
+                            <p class="least_price">1999元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/yinxiang.jpg" /></div>
+                            <p class="product_name">小米家庭音响 标准版</p>
+                            <p class="least_price">699元起</p>
+                        </div>
+                    </div>
+                    <!-- 路由器 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/HD-Pro.png" /></div>
+                            <p class="product_name">小米路由器 HD/Pro</p>
+                            <p class="least_price">499元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/3G.png" /></div>
+                            <p class="product_name">小米路由器 3G</p>
+                            <p class="least_price">249元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmlyq3.png" /></div>
+                            <p class="product_name">小米路由器 3</p>
+                            <p class="least_price">149元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/3C.png" /></div>
+                            <p class="product_name">小米路由器 3C</p>
+                            <p class="least_price">99元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/cilimao.png" /></div>
+                            <p class="product_name">小米WiFi电力猫</p>
+                            <p class="least_price">249元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/fdq2.jpg" /></div>
+                            <p class="product_name">小米WiFi放大器 2</p>
+                            <p class="least_price">49元起</p>
+                        </div>
+                    </div>
+                    <!-- 智能硬件 -->
+                    <div class="xiaomi_phone_detail">
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/tzc.jpg" /></div>
+                            <p class="product_name">小米体脂秤</p>
+                            <p class="least_price">199元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/sh2.png" /></div>
+                            <p class="product_name">小米手环2</p>
+                            <p class="least_price">149元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/jsqcs.png" /></div>
+                            <p class="product_name">小米净水器</p>
+                            <p class="least_price">1499元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/xmvrplay2.png" /></div>
+                            <p class="product_name">小米VR眼镜 PLAY2</p>
+                            <p class="least_price">99元起</p>
+                        </div>
+                        <div class="xiaomi_items">
+                            <div class="type">新品</div>
+                            <div><img src="image/dfb.jpg" /></div>
+                            <p class="product_name">米家IH电饭煲</p>
+                            <p class="least_price">399元起</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- admin -->
+        <div id="manager">
+            <div id="manager_head">
+                <span>管理员端</span>
+                <button id="add_good">添加购物数据</button>
+            </div>
+            <div id="cart_header_main">
+                <span class="username">用户名称</span>
+                <div>
+                    <span class="cart_info">用户名</span>
+                    <span class="cart_info">密码</span>
+                    <span class="cart_info">修改</span>
+                    <span class="cart_info">删除</span>
+                </div>
+            </div>
+            <div class="cart_content_main">
+                <div>
+                    <button id="cart_modify">修改</button>
+                </div>
+                <div>
+                    <button id="cart_delete">删除</button>
+                </div>
+            </div>
+            <div id="cart_content_container">
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="service">
+                <div class="service_items">
+                    <img src="image/维修.png" />
+                    预约维修服务
+                </div>
+                <div class="service_items">
+                    <img src="image/七天.png" />
+                    七天无理由退货
+                </div>
+                <div class="service_items">
+                    <img src="image/15天无理由退货.png" />
+                    15天免费换货
+                </div>
+                <div class="service_items">
+                    <img src="image/礼物礼品.png" />
+                    满150元包邮
+                </div>
+                <div class="service_items">
+                    <img src="image/地标.png" />
+                    520余家售后网点
+                </div>
+            </div>
+            <div class="link">
+                <div class="link_left">
+                    <div class="link_left_top">
+                        <span>帮助中心</span>
+                        <span>服务支持</span>
+                        <span>线下门店</span>
+                        <span>关于小米</span>
+                        <span>关注我们</span>
+                        <span>特色服务</span>
+                    </div>
+                    <div class="link_left_bottom">
+                        <div class="bottom_items">
+                            <div>账户管理</div>
+                            <div>购物指南</div>
+                            <div>订单操作</div>
+                        </div>
+                        <div class="bottom_items">
+                            <div>售后政策</div>
+                            <div>自助服务</div>
+                            <div>相关下载</div>
+                        </div>
+                        <div class="bottom_items">
+                            <div>小米之家</div>
+                            <div>服务网点</div>
+                            <div>零售网点</div>
+                        </div>
+                        <div class="bottom_items">
+                            <div>了解小米</div>
+                            <div>加入小米</div>
+                            <div>联系我们</div>
+                        </div>
+                        <div class="bottom_items">
+                            <div>新浪微博</div>
+                            <div>小米部落</div>
+                            <div>官方微信</div>
+                        </div>
+                        <div class="bottom_items">
+                            <div>F码通道</div>
+                            <div>礼物码</div>
+                            <div>防伪查码</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link_right">
+                    <p class="phone">400-100-5678</p>
+                    <p class="time">周一至周日 8:00-18:00</p>
+                    <p class="phone_bill">（仅收市话费）</p>
+                    <div class="online_service">24小时在线客服</div>
+                </div>
+            </div>
+            <div class="information">
+                <div class="information_left">
+                    <img src="image/mi_logo.png" class="mi_logo" />
+                </div>
+                <div class="information_center">
+                    <p class="p1">
+                        小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region
+                    </p>
+                    <p class="p2">
+                        ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号
+                    </p>
+                    <p class="p2">
+                        违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                </div>
+                <div class="information_right">
+                    <img src="image/下载.png" />
+                    <img src="image/下载 (1).png" />
+                    <img src="image/下载 (2).png" />
+                    <img src="image/下载 (3).png" />
+                </div>
+            </div>
+            <div class="slogan">
+                <img src="image/下载 (4).png" />
+            </div>
+        </footer>
+    </div>
+    <script src="js/top.js"></script>
+    <script src="js/bottom.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

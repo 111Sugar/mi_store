@@ -1,0 +1,118 @@
+.userCart {
+    width: 80%;
+    margin: 40px auto;
+}
+.userCart >div {
+    overflow-x: scroll;
+}
+.userCart table {
+    width: 1100px;
+}
+.userCart table thead {
+    color: #909399;
+    font-weight: 500;
+}
+.userCart table thead th {
+    padding: 10px 0px;
+}
+.userCart table tr {
+    height: 70px;
+    text-align: center;
+    font-size: 14px;
+    color: #909399;
+}
+.userCart table tr:hover {
+    background-color: #f5f7fa;
+}
+.smallimage {
+    text-align: left;
+}
+.smaller {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    position:relative;
+    top:10px;
+}
+.goods_cart_name {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #606266;
+    position:relative;
+    top:-10px;
+}
+.userCart table tr button {
+    font-weight: 500;
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1.5px solid #dcdfe6;
+    color: #606266;
+    z-index:2;
+}
+.userCart table tr button:hover {
+    background-color: #edf5ff;
+    border: 1.5px solid #c9e2ff;
+}
+.goods_count {
+    padding: 0 10px;
+    margin-right: -10px;
+}
+.delete {
+    margin-right: 20px;
+}
+.increase {
+    margin-left: 10px;
+}
+.error_container {
+    position: fixed;
+    top:-43px;
+    width: 400px;
+    left:50%;
+    z-index: 5;
+    margin-left: -180px;
+}
+#success_buy,#success_delete {
+    position: fixed;
+    z-index: 5;
+    top: -43px;
+    width: 400px;
+    position: fixed;
+    background-color: #f1f9ea;
+    border: 1.5px solid #e2f3d7;
+    color: #86cb4a;
+}
+.error {
+    background-color: #fdefef;
+    border: 1.5px solid #fae1e1;
+    border-radius: 4px;
+    height: 40px;
+    line-height: 40px;
+    color: #ec6b6a;
+    font-size: 14px;
+    position: relative;
+}
+.error_text {
+    position: absolute;
+    left: 40px;
+}
+@keyframes mymoveone
+{
+0% {top:-43px;}
+25% {top:20px;}
+50% {top:20px;}
+75% {top:20px;}
+100% {top:20px;}
+}
+@keyframes mymovetwo
+{
+0% {top:20px;}
+25% {top:20px;}
+50% {top:20px;}
+75% {top:-43px;}
+100% {top:-43px;}
+}

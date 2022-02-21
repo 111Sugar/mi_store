@@ -1,0 +1,140 @@
+#registration_container {
+    margin: 20px auto;
+    padding: 20px 0;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.shadow {
+    width: 320px;
+    position: relative;
+    left: 100%;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    border: 1px solid #ebeef5;
+}
+.form_body h2 {
+    margin-bottom: 10px;
+}
+.form_body img {
+    height: 40px;
+    width: 40px;
+}
+.form_body div img {
+    height: 20px;
+    width: 20px;
+    padding: 10px 0;
+    position: absolute;
+    top:50%;
+    right: 10px;
+    margin-top: -15px;
+    opacity: 0;
+    cursor: pointer;
+}
+.password {
+    position: relative;
+}
+#admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 16px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#admin .myform {
+    top:0;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+#admin label {
+    position: absolute; 
+    left:30px;
+    line-height: 16px;
+}
+.form_body input {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 317px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1.5px solid #dcdfe6;
+    color: #606266;
+}
+.form_body input:hover {
+    border-color: #bfc2cb;
+    transition: border-color .2s ;
+}
+.form_body input:focus {
+    border-color: #409eff !important;
+    outline: 0;
+    transition: border-color .2s ;
+}
+.form_body button {
+    font-size: 14px;
+    padding: 12px 20px;
+    background-color: #409eff;
+    border:1px solid #409eff ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form_body button:hover {
+    opacity: 0.8;
+    transition: opacity .1s;
+}
+.error_container {
+    position: fixed;
+    top:-43px;
+    width: 400px;
+    left:50%;
+    margin-left: -180px;
+}
+.error {
+    background-color: #fdefef;
+    border: 1.5px solid #fae1e1;
+    border-radius: 4px;
+    height: 40px;
+    line-height: 40px;
+    color: #ec6b6a;
+    font-size: 14px;
+    position: relative;
+}
+.error img {
+    position: absolute;
+    top:15px;
+    height: 10px;
+    width: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.error_text {
+    position: absolute;
+    left: 40px;
+}
+@keyframes mymoveone
+{
+0% {top:-43px;}
+25% {top:20px;}
+50% {top:20px;}
+75% {top:20px;}
+100% {top:20px;}
+}
+@keyframes mymovetwo
+{
+0% {top:20px;}
+25% {top:20px;}
+50% {top:20px;}
+75% {top:-43px;}
+100% {top:-43px;}
+}
+@keyframes enter 
+{
+    from {left: 100%;}
+    to {left:50%;margin-left: -160px;}
+}
